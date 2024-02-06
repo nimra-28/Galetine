@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galentine's Day Party Invitation</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #fce4ec;
+      margin: 0;
+      padding: 0;
+    }
+
+    #invitation {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 50px auto;
+      width: 60%;
+    }
+
+    h1 {
+      color: #e91e63;
+    }
+
+    p {
+      color: #333;
+      font-size: 18px;
+    }
+
+    button {
+      background-color: #e91e63;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    img {
+      max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+      max-height: 200px; /* Set the maximum height for the image */
+      height: auto;    /* Maintains the aspect ratio of the image */
+      margin: 20px auto; /* Center the image horizontally and add margin top/bottom */
+    }
+  </style>
+</head>
+<body>
+
+<div id="invitation">
+  <h1>Galentine's Day Party Invitation</h1>
+  <img src="https://i.pinimg.com/originals/16/5d/18/165d1824e77b4a10fab9dbbabf093f7f.gif" alt="Party Image">
+  <p>Hey Girl! I'm hosting a Galentine's Day party and would love for you to join. Will you come?</p>
+  <button onclick="reply('Yes')">Yes</button>
+  <button onclick="reply('No')">No</button>
+</div>
+
+<script>
+  function reply(response) {
+    if (response === 'Yes') {
+      alert("Great! Looking forward to seeing you at the party!");
+    } else {
+      alert("Oh no! We'll miss you. Maybe next time!");
+    }
+  }
+</script>
+
+</body>
+</html>
